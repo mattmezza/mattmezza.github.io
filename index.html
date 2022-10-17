@@ -2,44 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="${MM_DESCR:-}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/mvp.css">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/style/global.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💭</text></svg>">
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <title>Matteo Merola</title>
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@_mattmezza_">
+  <meta property="og:url" content="https://matteo.merola.co">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Matteo Merola - Articles">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Articles by Matteo Merola">
+  <meta property="og:title" content="Articles">
+  <meta property="og:description" content="Articles by Matteo Merola">
+  <meta property="og:image" content="https://matteo.merola.co/assets/default-image.jpg">
+
+  <!-- <script async defer data-website-id="085a8ece-dea7-4ce1-b62a-3b6241b32b31" src="https://analytics.saaskoala.com/umami.js"></script> -->
 </head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/articles">Articles</a></li>
-      </ul>
-      <ul>
-        <li><a href="https://github.com/mattmezza"><i class="fab fa-github"></i></a></li>
-        <li><a href="https://twitter.com/_mattmezza_"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="https://linkedin.com/in/matteomerola"><i class="fab fa-linkedin"></i></a></li>
-        <li><a href="https://telegram.me/mattmezza"><i class="fab fa-telegram"></i></a></li>
-        <li><a href="mailto:mattmezza@gmail.com"><i class="fas fa-envelope"></i></a></li>
-      </ul>
+<body class="antialiased flex flex-col min-h-screen dark:bg-dark-base-100 dark:text-white gap-4">
+  <header class="px-4 prose-responsive prose-a:no-underline mx-auto w-full mt-4">
+    <nav class="flex justify-between items-center">
+      <div class="flex justify-start items-center gap-4">
+        <a class="btn btn-ghost btn-md" href="/"><span>🏠</span>Home</a>
+        <a class="btn btn-ghost btn-md" href="/articles"><span>💭</span>Articles</a>
+      </div>
+      <div class="flex justify-start items-center gap-4 mr-2">
+        <a class="btn" href="https://github.com/mattmezza"><i class="fab fa-github"></i></a>
+        <a class="btn" href="https://twitter.com/_mattmezza_"><i class="fab fa-twitter w-4"></i></a>
+        <a class="btn" href="https://linkedin.com/in/matteomerola"><i class="fab fa-linkedin w-4"></i></a>
+        <a class="btn" href="https://telegram.me/mattmezza"><i class="fab fa-telegram w-4"></i></a>
+        <a class="btn" href="mailto:mattmezza@gmail.com"><i class="fas fa-envelope w-4"></i></a>
+      </div>
     </nav>
   </header>
-  <main>
-    <article style="max-width: 800px">
-      <h1>Matteo Merola</h1>
-      <p>I'm currently building <a href="https://saaskoala.com">SaaS products</a> such as <a href="https://zenleadr.com/?utm_source=matteo.merola.co">ZenLeadr</a> that help people and businesses succeed.</p>
-      <p><a href="https://zenleadr.com/?utm_source=matteo.merola.co">ZenLeadr</a> is a toolkit designed for engineering managers and leaders.</p>
+  <main class="flex flex-grow justify-center items-center">
+    <div class="px-4 w-full prose-responsive prose-zinc prose-h1:mb-0 prose-h3:mt-0 prose-h3:mb-8 prose-h3:font-normal">
+      <h1>Matteo Merola<span class="text-xs sm:text-sm md:text-base text-gray-700 ml-2 font-light italic">(he/him)</span></h1>
+      <h3>Engineering Manager</h3>
+      <p>I create software <a href="https://saaskoala.com">that helps people and businesses succeed</a>.</p>
+      <p>I run <a href="https://zenleadr.com/?utm_source=matteo.merola.co">ZenLeadr</a>, the toolkit designed for engineering managers and leaders.</p>
       <p>
-        Previously, I was an <a href="https://linkedin.com/in/matteomerola">Engineering Lead</a> at <a href="https://shell.com">Shell</a>, where I was leading +40 engineers building the operating system for the trade and supply business.
+        Previously, I was an <a href="https://linkedin.com/in/matteomerola">Engineering Manager</a> at <a href="https://shell.com">Shell</a>, where I was leading 40+ engineers building the operating system for the trade and supply business.
 
-        Before that, I was a <a href="https://linkedin.com/in/matteomerola">tech lead</a> at <a href="https://www.klm.com">KLM</a>, working on turning <a href="https://airlineoperations.ai">airline operations</a> into a competitive advantage (<a href="https://youtu.be/Tkn0Q-lKTP0" target="_blank">watch &nearr;</a>).
+        I was also a <a href="https://linkedin.com/in/matteomerola">tech lead</a> at <a href="https://www.klm.com">KLM</a>, working on turning <a href="https://airlineoperations.ai">airline operations</a> into a competitive advantage (<a href="https://youtu.be/Tkn0Q-lKTP0" target="_blank">watch &nearr;</a>).
       </p>
       <p>
-        I've also started a <a href="https://datasound.it" alt="datasound, a boutique consultancy company in the realm of big data analisys, recommender systems and artificial intelligence.">digital company</a>, led the development team in an <a href="https://corsi.it" alt="">edutech startup</a>, wrote <a href="https://github.com/mattmezza">open source software</a> and collaborated with many companies in areas such as <a href="https://bunq.com">fintech</a> and <a href="https://cleopa.de">greentech</a>.
+        In my 7+ years of experience I've started a <a href="https://datasound.it" alt="datasound, a boutique consultancy company in the realm of big data analisys, recommender systems and artificial intelligence.">digital company</a>, led the development team in an edutech startup (<a href="https://corsi.it" alt="">corsi.it</a>), collaborated with many companies in areas such as fintech (<a href="https://bunq.com">bunq</a>) and greentech (<a href="https://cleopa.de">cleopa</a>).
       </p>
-    </article>
+      <p>
+        I write Open Source software at <a href="https://github.com/mattmezza">github.com/mattmezza</a> and I <a href="articles">blog</a> every once in a while.
+      </p>
+    </div>
   </main>
-  <script async defer data-website-id="085a8ece-dea7-4ce1-b62a-3b6241b32b31" src="https://analytics.saaskoala.com/umami.js"></script>
 </body>
 </html>

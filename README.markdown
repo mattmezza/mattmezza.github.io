@@ -19,3 +19,9 @@ make
 ```
 
 Note: both this repo and `mattmezza.github.io` need to be cloned in the same level directory. See `Makefile` in this repo to understand why.
+
+
+### Usage with tailwindcss
+
+- `npx tailwindcss -i input.css -o style/global.css --watch`
+- `cd ../mattmezza.github.io && npx live-server .`

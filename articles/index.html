@@ -2,52 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="${MM_DESCR:-}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/mvp.css">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/style/global.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💭</text></svg>">
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-  <title>Articles – Matteo Merola</title>
+  <title>💭 Articles – Matteo Merola</title>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@_mattmezza_">
+  <meta property="og:url" content="https://matteo.merola.co">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Matteo Merola - Articles">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Articles by Matteo Merola">
+  <meta property="og:title" content="Articles">
+  <meta property="og:description" content="Articles by Matteo Merola">
+  <meta property="og:image" content="https://matteo.merola.co/assets/default-image.jpg">
+  <!-- <script async defer data-website-id="085a8ece-dea7-4ce1-b62a-3b6241b32b31" src="https://analytics.saaskoala.com/umami.js"></script> -->
 </head>
-<body>
-  <main>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/articles">Articles</a></li>
-      </ul>
-      <ul>
-        <li><a href="https://github.com/mattmezza"><i class="fab fa-github"></i></a></li>
-        <li><a href="https://twitter.com/_mattmezza_"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="https://linkedin.com/in/matteomerola"><i class="fab fa-linkedin"></i></a></li>
-        <li><a href="https://telegram.me/mattmezza"><i class="fab fa-telegram"></i></a></li>
-        <li><a href="mailto:mattmezza@gmail.com"><i class="fas fa-envelope"></i></a></li>
-      </ul>
+<body class="antialiased flex flex-col min-h-screen dark:bg-dark-base-100 dark:text-white gap-4">
+  <header class="prose-responsive prose-a:no-underline mx-auto w-full mt-4">
+    <nav class="flex justify-between items-center">
+      <div class="flex justify-start items-center gap-4">
+        <a class="btn btn-ghost btn-md" href="/"><span>🏠</span>Home</a>
+        <a class="btn btn-ghost btn-md" href="/articles"><span>💭</span>Articles</a>
+      </div>
+      <div class="flex justify-start items-center gap-4 mr-2">
+        <a class="btn" href="https://github.com/mattmezza"><i class="fab fa-github"></i></a>
+        <a class="btn" href="https://twitter.com/_mattmezza_"><i class="fab fa-twitter w-4"></i></a>
+        <a class="btn" href="https://linkedin.com/in/matteomerola"><i class="fab fa-linkedin w-4"></i></a>
+        <a class="btn" href="https://telegram.me/mattmezza"><i class="fab fa-telegram w-4"></i></a>
+        <a class="btn" href="mailto:mattmezza@gmail.com"><i class="fas fa-envelope w-4"></i></a>
+      </div>
     </nav>
+  </header>
+  <main class="grow prose-responsive mx-auto w-full mt-16 md:mt-32 px-4">
     <h1>Articles 💭</h1>
     <article>
-      <dl>
-        <dt>
-          <a href="/articles/2020/pull-requests.html">Pull Requests</a> <em>14th August 2020</em>
-        </dt>
+      <dl class="space-y-2">
+        <dt><a href="/articles/2022/what-are-you-doing.html">What are you doing?</a> <em class="text-gray-700">4th August 2022</em></dt>
         <dd>
           <!-- eventual summary here -->
         </dd>
-        <dt>
-          <a href="/articles/2020/reactive-programming.html">Reactive Programming</a> <em>28th June 2020</em>
-        </dt>
+        <dt><a href="/articles/2022/write-things-down.html">Write things down</a> <em class="text-gray-700">28th July 2022</em></dt>
         <dd>
           <!-- eventual summary here -->
         </dd>
-        <dt>
-          <a href="/articles/2017/remote-working.html">Remote working</a> <em>7th August 2017</em>
-        </dt>
+        <dt><a href="/articles/2020/pull-requests.html">Pull Requests</a> <em class="text-gray-700">14th August 2020</em></dt>
+        <dd>
+          <!-- eventual summary here -->
+        </dd>
+        <dt><a href="/articles/2020/reactive-programming.html">Reactive Programming</a> <em class="text-gray-700">28th June 2020</em></dt>
+        <dd>
+          <!-- eventual summary here -->
+        </dd>
+        <dt><a href="/articles/2017/remote-working.html">Remote working</a> <em class="text-gray-700">7th August 2017</em></dt>
         <dd>
           <!-- eventual summary here -->
         </dd>
       </dl>
     </article>
   </main>
-  <script async defer data-website-id="085a8ece-dea7-4ce1-b62a-3b6241b32b31" src="https://analytics.saaskoala.com/umami.js"></script>
 </body>
 </html>

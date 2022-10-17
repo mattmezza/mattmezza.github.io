@@ -11,8 +11,6 @@ cd mattmezza.github.io
 serve .
 ```
 
-Now you can open up a browser and paste the address (automatically copied). You can install `serve` globally via `npm install -g serve`.
-
 You can then cd back into the this repo and start editing the content. You can build the website by running:
 ```
 make

@@ -1,7 +1,7 @@
 [web](https://github.com/mattmezza/web)
 ===
 
-This repo works in conjunction with [mattmezza/mattmezza.github.io](/mattmezza/mattmezza.github.io).
+This repo works in conjunction with [mattmezza/mattmezza.github.io](https://github.com/mattmezza/mattmezza.github.io).
 
 Before starting editing within the context of this repo, please clone the above mentioned one.
 

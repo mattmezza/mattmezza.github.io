@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@_mattmezza_">
+  <meta property="og:url" content="https://matteo.merola.co">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Matteo Merola - Articles">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="A fast, lightweight, and bias-reducing framework for collecting engineer feedback after interviews. Learn how the +-=?: format helps my teams hire better, faster.">
+  <meta property="og:title" content="Hiring at Speed: the '+-=?:' framework">
+  <meta property="og:description" content="A fast, lightweight, and bias-reducing framework for collecting engineer feedback after interviews. Learn how the +-=?: format helps my teams hire better, faster.">
+  <meta property="og:image" content="/assets/speed.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💭</text></svg>">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script defer src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+  <script defer src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  <script defer src="https://analytics.casa.merola.co/script.js" data-website-id="085a8ece-dea7-4ce1-b62a-3b6241b32b31"></script>
+  <link rel="prefetch" as="document" href="/" />
+  <link rel="prerender" href="/" />
+
+  <title>Hiring at Speed: the '+-=?:' framework</title>
+</head>
+<body class="antialiased flex flex-col min-h-screen dark:bg-dark-base-100 dark:text-white gap-4">
+  <header class="prose-responsive prose-a:no-underline mx-auto w-full mt-4">
+    <nav class="flex flex-col md:flex-row justify-center md:justify-between items-center gap-4">
+      <div class="flex justify-start items-center gap-4">
+        <a class="btn btn-ghost btn-md" href="/"><span>🏠</span>Home</a>
+        <a class="btn btn-ghost btn-md" href="/articles"><span>💭</span>Articles</a>
+      </div>
+      <div class="flex justify-start items-center gap-4 mr-2">
+        <a class="btn" href="https://github.com/mattmezza"><i class="fab fa-github"></i></a>
+        <a class="btn" href="https://twitter.com/_mattmezza_"><i class="fab fa-twitter w-4"></i></a>
+        <a class="btn" href="https://linkedin.com/in/matteomerola"><i class="fab fa-linkedin w-4"></i></a>
+        <a class="btn" href="https://telegram.me/mattmezza"><i class="fab fa-telegram w-4"></i></a>
+        <a class="btn" href="mailto:mattmezza@gmail.com"><i class="fas fa-envelope w-4"></i></a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <article class="px-4 prose-responsive prose-zing mx-auto prose-figure:rounded prose-figcaption:text-xs">
+        <header class="text-center mt-2 md:mt-4 mb-8 md:mb-16">
+          <input type="checkbox" class="peer invisible" checked />
+          <figure class="hidden peer-checked:block rounded">
+            <img class="rounded" src="/assets/speed.jpg" alt="" />
+            <p class="pt-2 text-xs opacity-70">@raymondkotewicz on <a href="https://unsplash.com/photos/a-gas-station-at-night-HE98xBQ3Q0M">unsplash</a></p>
+          </figure>
+          <h1 class="!mb-4">Hiring at Speed: the '+-=?:' framework</h1>
+          <h4 class="!mt-4 !font-normal">20th June 2025 &middot; Matteo Merola</h4>
+        </header>
+        <p>Hiring is one of the most critical things we do as engineering
+leaders. It’s also one of the hardest to get right. Over the years, I’ve
+hired a couple of hundred engineers, and I’ve iterated constantly on my
+process. My goal is simple: make it fast enough to not lose great
+candidates, and robust enough to yield good results.</p>
+<p>We’ve all been in those endless hiring loops. Multiple rounds,
+panels, and long debrief meetings where the loudest voice often wins. I
+found that a lengthy process doesn’t correlate with a higher quality of
+hire. It just correlates with a higher chance of your top candidate
+accepting another offer.</p>
+<p>Engineers want to have a say in who joins their team, but they are
+rightfully focused on their work. Being mindful of their time is
+paramount. This led me to develop a lightweight yet powerful feedback
+collection method that has become the cornerstone of my hiring strategy.
+I call it the <code>+-=?:</code> format.</p>
+<h3 id="the-process-in-a-nutshell">The Process in a Nutshell</h3>
+<p>My interview process is trimmed down to the essentials:</p>
+<ol type="1">
+<li><strong>Hiring Manager Interview:</strong> I conduct this first.
+It’s my chance to assess alignment on values, ambition, and high-level
+experience. It’s a chance for the candidate to understand what the hell
+we are working on and learn about the company’s business.</li>
+<li><strong>Technical Assessment:</strong> A pair of engineers
+(sometimes a trio) from the team takes the candidate through a technical
+discussion. This is their domain.</li>
+<li><strong>Feedback Collection:</strong> After the technical
+assessment, each interviewer sends me their feedback in a structured
+format.</li>
+<li><strong>Decision Making:</strong> I review the feedback, look for
+patterns, and make a decision. If there are conflicting opinions, I
+follow up with the interviewers to understand their perspectives
+better.</li>
+</ol>
+<p>The magic happens right after the technical assessment. Instead of a
+group debrief, which can be swayed by groupthink, I ask each interviewer
+to send me their feedback as a direct message. This forces individual
+assessment and prevents bias.</p>
+<h3 id="the---feedback-framework">The <code>+-=?:</code> Feedback
+Framework</h3>
+<p>The feedback comes in a simple, structured text format. It’s easy to
+write and, more importantly, easy to parse. Here’s the breakdown:</p>
+<ul>
+<li><code>+</code> <strong>Positives:</strong> What were the candidate’s
+clear strengths? What did you like?</li>
+<li><code>-</code> <strong>Negatives:</strong> What were the red flags
+or clear areas of weakness?</li>
+<li><code>=</code> <strong>On-the-fence:</strong> Points that could be
+good or bad depending on context, or things that simply felt “off” to
+the interviewer.</li>
+<li><code>?</code> <strong>Doubts:</strong> What questions are still
+unanswered? What do you wish you had more time to explore?</li>
+<li><code>:</code> <strong>Recommendation:</strong> The final call, with
+a one-line justification. The scale is:
+<code>dont-hire | hire-but | hire | hire-now</code>.</li>
+</ul>
+<p>Here’s a real-world example of what I might receive from an
+interviewer:</p>
+<pre class="text"><code>+ experience with both frontend and backend
++ experience with the same industry
+- little experience with react (mostly angular)
+= very much into &quot;agile&quot; and &quot;scrum&quot;
+? although has exp with frontend and backend I could not grasp the depth of exp in distributed microservice setups
+
+: hire-now : I would love working with this person, they seem nice and can bring plenty of exp to our team</code></pre>
+<h3 id="why-this-framework-works">Why This Framework Works</h3>
+<p>After I receive a couple of these from the interviewers, I almost
+always have a clear picture. The benefits have proven to be
+significant:</p>
+<ol type="1">
+<li><p><strong>It Minimizes Unconscious Bias:</strong> By having
+interviewers provide feedback independently, I eliminate the risk of one
+person’s opinion influencing the entire group before the discussion even
+starts.</p></li>
+<li><p><strong>It Maximizes Signal, Minimizes Time:</strong> Engineers
+don’t need to write an essay. They just need to fill the template. This
+structure gives them clear buckets to think about during the interview
+itself. The whole process is incredibly respectful of their
+time.</p></li>
+<li><p><strong>It Gives Interviewers Freedom:</strong> I don’t dictate
+how the engineers should run their technical sessions. So long as they
+come away with enough signal to fill out the <code>+-=?:</code>
+feedback, they can drive the conversation in the way that feels most
+authentic to them.</p></li>
+<li><p><strong>It Surfaces Misalignment for Calibration:</strong> What
+happens when I get one <code>:hire-now</code> and one
+<code>:dont-hire</code>? This is a gift. It’s a clear signal that the
+interviewers are not calibrated. It gives me a perfect, data-driven
+reason to bring them together and discuss their conflicting viewpoints.
+These calibration sessions are far more valuable than a generic
+debrief.</p></li>
+<li><p><strong>It Allows for Feedback Weighing:</strong> Sometimes I’ll
+have a less experienced engineer shadow an interview for training. Their
+feedback is valuable, but I can weigh it differently against the
+feedback from a tenured senior engineer. The raw text format makes this
+implicit weighting easy.</p></li>
+</ol>
+<h3 id="its-a-framework-not-a-cage">It’s a Framework, Not a Cage</h3>
+<p>A common question I get is whether this simple format loses valuable
+nuance. Like any tool, its effectiveness depends on how you use it.
+Here’s how we address potential pitfalls:</p>
+<ul>
+<li><p><strong>On Losing Context:</strong> The <code>+-=?:</code>
+message is the start of the feedback process, not the end. Its purpose
+is to get a clean, unbiased initial read. If I see an intriguing comment
+in the <code>=</code> or <code>?</code> sections, I’ll follow up with
+that interviewer 1-on-1 to get the richer story behind the
+summary.</p></li>
+<li><p><strong>On Candidate Experience:</strong> The “freedom” for
+interviewers isn’t a free-for-all. It exists within firm guardrails. As
+a hiring manager, I set clear expectations for the tone, goals, and
+rules of engagement for all interviews. We aim for a process that is
+respectful and consistent for the candidate, even if the exact technical
+topics vary. The speed of this process is, in itself, a huge plus for
+the candidate experience.</p></li>
+<li><p><strong>On Hidden Biases:</strong> Individual biases can still
+exist. The framework helps by making them more visible. If an
+interviewer lists something like <code>"= very much into 'agile'"</code>
+as a neutral point, it’s a flag for me to ask <em>why</em>. This allows
+me to challenge assumptions and ensure we’re judging skills, not
+personal preferences. It turns a potential hidden bias into a coachable
+moment.</p></li>
+<li><p><strong>On Training Junior Interviewers:</strong> The framework
+is an excellent training tool. When joining the interviews, I always
+pair a junior interviewer with a senior one. After the interview, they
+can discuss what they observed before sending me their individual
+feedback. I can then compare their reports to see how the junior
+interviewer is progressing in their ability to spot key
+signals.</p></li>
+</ul>
+<h3 id="final-thoughts">Final Thoughts</h3>
+<p>Hiring will always be an imperfect science. The context
+matters—hiring a full-time employee is different from bringing on a
+fixed-term consultant. But the principles of respecting time,
+structuring feedback, and mitigating bias are universal.</p>
+<p>YOLO hiring doesn’t work, and outsourced recruitment doesn’t always
+have the team’s best interests at heart. Building a great team requires
+a thoughtful process. This framework is my way of making it quick,
+robust, and engineer-friendly.</p>
+      </article>
+    </section>
+  </main>
+  <footer class="text-sm my-16 md:my-32 text-center opacity-50">All rights reserved &copy; 2025 – Matteo Merola</footer>
+</body>
+</html>

@@ -26,11 +26,13 @@
   <title>Write Things Down</title>
 </head>
 <body class="antialiased flex flex-col min-h-screen dark:bg-dark-base-100 dark:text-white gap-4">
-  <header class="prose-responsive prose-a:no-underline mx-auto w-full mt-4">
-    <nav class="flex flex-col md:flex-row justify-center md:justify-between items-center gap-4">
-      <div class="flex justify-start items-center gap-4">
-        <a class="btn btn-ghost btn-md" href="/"><span>🏠</span>Home</a>
-        <a class="btn btn-ghost btn-md" href="/articles"><span>💭</span>Articles</a>
+  <header class="px-4 prose-responsive prose-a:no-underline mx-auto w-full my-4">
+    <nav class="flex flex-col lg:flex-row justify-center md:justify-between items-center gap-4">
+      <div class="flex justify-start items-center gap-2 md:gap-3 xl:gap-4">
+        <a class="btn btn-ghost btn-md !no-underline" href="/"><span class="hidden md:block">🏠</span>Home</a>
+        <a class="btn btn-ghost btn-md !underline-offset-8" href="/articles"><span class="hidden md:block">💭</span>Articles</a>
+        <a class="btn btn-ghost btn-md !no-underline" href="/software"><span class="hidden md:block">💻</span>Software</a>
+        <a class="btn btn-ghost btn-md !no-underline" href="/services"><span class="hidden md:block">🤝</span>Services</a>
       </div>
       <div class="flex justify-start items-center gap-4 mr-2">
         <a class="btn" href="https://github.com/mattmezza"><i class="fab fa-github"></i></a>
